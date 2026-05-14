@@ -1,5 +1,5 @@
 export default function JiroJukuLP() {
-  const lineUrl = "#";
+  const lineUrl = "https://lin.ee/YX9dAhd";
 
   const features = [
     "マンツーマン指導",
@@ -43,11 +43,11 @@ export default function JiroJukuLP() {
   ];
 
   const lessonFlow = [
-    "宿題の復習テスト",
-    "進捗確認と、学習してみた感想のヒアリング",
-    "状況をふまえて次週の課題を設定",
-    "興味や課題に合わせて動画・書籍を紹介",
-    "次回までの宿題を作成",
+    "宿題の確認テストで定着度をチェック",
+  "学習の進捗・感想・つまずきを確認",
+  "弱点に合わせて次週の課題を設定",
+  "興味に合わせた英語コンテンツを紹介",
+  "次回までの宿題プランを作成",
   ];
 
   const faqs = [
@@ -128,6 +128,19 @@ export default function JiroJukuLP() {
         .profile-text p { margin: 0; }
         .flow-block + .flow-block { margin-top: 34px; }
         .flow-title { color: #2c5a87; margin-bottom: 16px; }
+        .flow-lead {
+  margin: 0 0 24px;
+  color: rgba(0,0,0,.68);
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.mini-lead {
+  margin: 12px 0 0;
+  color: rgba(0,0,0,.68);
+  line-height: 1.8;
+  font-size: 15px;
+}
         .flow-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
         .flow-item { display: flex; gap: 14px; align-items: flex-start; }
         .num { width: 32px; height: 32px; flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: #06C755; color: #fff; font-size: 14px; font-weight: 900; }
@@ -254,10 +267,12 @@ export default function JiroJukuLP() {
             </div>
 
             <div className="beige-box">
-              <div className="section-title"><div className="bar" /><h2>レッスンの流れ</h2></div>
-              <FlowBlock title="一回目の授業（無料体験）" items={trialFlow} />
-              <FlowBlock title="2回目以降の授業" items={lessonFlow} />
-            </div>
+  <div className="section-title"><div className="bar" /><h2>毎週のレッスンの進め方</h2></div>
+  <p className="flow-lead">
+    英検合格に向けた戦略と、英語を楽しむための好奇心ベースの学習を組み合わせて進めます。
+  </p>
+  <FlowBlock title="通常レッスンでやること" items={lessonFlow} />
+</div>
           </section>
 
           <section className="container section">
@@ -275,11 +290,14 @@ export default function JiroJukuLP() {
                 </div>
                 <div className="mini-card beige-box">
                   <h3>無料体験でできること</h3>
+                  <p className="mini-lead">
+  英検対策と、英語を楽しむための好奇心ベースの学習を組み合わせて提案します。
+</p>
                   <ul>
-                    <li>✅ 現状・目標・悩みのヒアリング</li>
-                    <li>✅ 英検に向けた学習スケジュールと受験戦略の設計</li>
-                    <li>✅ 興味に合わせた動画・書籍の紹介</li>
-                    <li>✅ 毎日の宿題作成</li>
+                    <li>✅ 現在の英語力・目標・悩みを整理</li>
+                    <li>✅ 英検合格までの学習スケジュールを作成</li>
+                    <li>✅ 好きなテーマに合わせて動画・洋書・記事を紹介</li>
+                    <li>✅ 毎日取り組める宿題プランを設計</li>
                   </ul>
                   <div className="actions"><a href={lineUrl} className="btn btn-line btn-main">LINEで問い合わせる</a></div>
                 </div>
