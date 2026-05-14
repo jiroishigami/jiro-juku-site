@@ -85,7 +85,14 @@ export default function JiroJukuLP() {
         .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 32px; padding-top: 48px; padding-bottom: 56px; align-items: stretch; }
         .photo-card { background: #dcecf0; border-radius: 28px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
         .photo-frame { height: 100%; min-height: 430px; border-radius: 22px; border: 1px solid rgba(0,0,0,.06); background: rgba(255,255,255,.45); padding: 24px; display: flex; }
-        .photo-frame img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; display: block; }
+        .photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% center;
+  border-radius: 18px;
+  display: block;
+}
         .hero-copy { background: #efe8d4; border-radius: 28px; padding: 40px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
         .pill { display: inline-block; background: rgba(255,255,255,.7); border-radius: 999px; padding: 6px 12px; font-size: 12px; font-weight: 800; letter-spacing: .03em; margin-bottom: 18px; }
         h1 { margin: 0; font-size: clamp(36px, 5vw, 64px); line-height: 1.12; font-weight: 950; letter-spacing: -.03em; }
@@ -146,6 +153,9 @@ export default function JiroJukuLP() {
           .photo-card, .hero-copy, .blue-box, .white-box, .beige-box { border-radius: 24px; padding: 20px; }
           .photo-frame { min-height: 360px; padding: 14px; }
           h1 { font-size: 38px; }
+          .photo-frame img {
+  object-position: left center;
+}
           .subtitle { font-size: 20px; }
           .lead { font-size: 16px; }
           .features, .worry-grid, .pillar-grid, .two-col, .plan-grid { grid-template-columns: 1fr; }
