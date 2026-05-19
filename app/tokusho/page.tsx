@@ -145,30 +145,51 @@ export default function TokushoPage() {
         }
 
         @media (max-width: 640px) {
-          .card {
-            padding: 24px 18px;
-            border-radius: 22px;
-          }
+  .page {
+    padding: 24px 14px;
+  }
 
-          h1 {
-            font-size: 24px;
-          }
+  .card {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
 
-          table, tbody, tr, th, td {
-            display: block;
-            width: 100%;
-          }
+  h1 {
+    font-size: 26px;
+    line-height: 1.45;
+    margin-bottom: 24px;
+  }
 
-          th {
-            padding-bottom: 6px;
-            border-top: 1px solid rgba(0,0,0,.12);
-          }
+  table {
+    font-size: 14px;
+  }
 
-          td {
-            border-top: none;
-            padding-top: 4px;
-          }
-        }
+  table, tbody, tr, th, td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 14px 0;
+  }
+
+  th {
+    border-top: none;
+    background: transparent;
+    padding: 0 0 6px;
+    font-size: 14px;
+    color: rgba(0,0,0,.6);
+  }
+
+  td {
+    border-top: none;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0,0,0,.82);
+  }
+}
       `}</style>
     </main>
   );
