@@ -159,6 +159,23 @@ export default function JiroJukuLP() {
         .cta h2 { margin-top: 14px; font-size: clamp(30px, 5vw, 54px); color: #fff; }
         .cta p { max-width: 680px; margin: 22px auto 0; line-height: 1.9; color: rgba(255,255,255,.88); }
         .btn-white { margin-top: 32px; background: #fff; color: #2c5a87; padding: 16px 28px; font-size: 16px; }
+        .footer {
+  padding: 32px 20px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0,0,0,.55);
+}
+
+.footer a {
+  color: rgba(0,0,0,.55);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer a:hover {
+  color: rgba(0,0,0,.8);
+}
+        
         @media (max-width: 820px) {
           .nav { padding: 14px 16px; }
           .hero { grid-template-columns: 1fr; padding: 22px 16px 34px; gap: 18px; }
@@ -326,6 +343,9 @@ export default function JiroJukuLP() {
             </div>
           </section>
         </main>
+        <footer className="footer">
+  <a href="/tokusho">特定商取引法に基づく表記</a>
+</footer>
       </div>
     </>
   );
