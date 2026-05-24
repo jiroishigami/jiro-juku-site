@@ -149,6 +149,43 @@ export default function JiroJukuLP() {
         .mini-card { border-radius: 24px; padding: 28px; }
         .price { margin: 16px 0 0; font-size: 32px; font-weight: 950; }
         .price span { font-size: 16px; }
+        .price-options {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.price-option {
+  background: rgba(255,255,255,.55);
+  border-radius: 18px;
+  padding: 16px 18px;
+}
+
+.plan-name {
+  margin: 0;
+  font-weight: 950;
+  color: #2c5a87;
+}
+
+.plan-desc {
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(0,0,0,.68);
+}
+
+.plan-label {
+  margin: 20px 0 0;
+  font-weight: 950;
+  color: #2c5a87;
+}
+
+.plan-subtitle {
+  margin: 8px 0 0;
+  font-size: 14px;
+  font-weight: 800;
+  color: rgba(0,0,0,.62);
+}
         ul { margin: 18px 0 0; padding-left: 0; list-style: none; display: grid; gap: 12px; line-height: 1.75; }
         .faq-list { display: grid; gap: 16px; }
         .faq { background: #fff; border-radius: 22px; padding: 26px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
@@ -301,14 +338,34 @@ export default function JiroJukuLP() {
               <div className="section-title"><div className="bar" /><h2>プラン</h2></div>
               <div className="plan-grid">
                 <div className="mini-card blue-box">
-                  <h3>マンツーマン英検対策プラン</h3>
-                  <p className="price">22,000円<span> / 月（税込）</span></p>
-                  <ul>
-                    <li>✅ 週1回（60分）の完全オンラインマンツーマンレッスン</li>
-                    <li>✅ 英語学習に関する質問と英作添削に対応</li>
-                    <li>✅ 一人ひとりに合わせたオーダーメイド指導</li>
-                  </ul>
-                </div>
+  <h3>英語学習マンツーマンサポート</h3>
+  <p className="plan-subtitle">英検対策・大学受験英語対応</p>
+
+  <div className="price-options">
+    <div className="price-option">
+      <p className="plan-name">月2回プラン</p>
+      <p className="price">22,000円<span> / 月（税込）</span></p>
+      <p className="plan-desc">
+        月2回のレッスンで、他塾や学校の学習と併用しながら進めたい方向け
+      </p>
+    </div>
+
+    <div className="price-option">
+      <p className="plan-name">月4回プラン</p>
+      <p className="price">33,000円<span> / 月（税込）</span></p>
+      <p className="plan-desc">
+        月4回のレッスンで、英検対策や大学受験英語をしっかり進めたい方向け
+      </p>
+    </div>
+  </div>
+
+  <p className="plan-label">共通サポート内容</p>
+  <ul>
+    <li>✅ 完全オンラインマンツーマンレッスン</li>
+    <li>✅ 英作文添削・英語学習の質問し放題</li>
+    <li>✅ 一人ひとりに合わせた毎日の宿題を作成</li>
+  </ul>
+</div>
                 <div className="mini-card beige-box">
                   <h3>無料体験でできること</h3>
                   <p className="mini-lead">
